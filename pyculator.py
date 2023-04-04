@@ -7,7 +7,6 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 
 
-
 # Factorial operation function
 def factorial(x):
     if x == 1:
@@ -197,7 +196,7 @@ image_label.place(relx=0.5, rely=0.1, anchor=tk.CENTER)
 label1 = tk.Label(root, text="", bg="#E6E6E6")
 label1.grid(row=0, column=0, columnspan=4, padx=20, pady=(70,10))
 
-# Create input fields
+# Create functions that handle the placeholder text on the input fields
 def on_entry_click(event):
     """Function to handle click event on entry widgets"""
     widget = event.widget
@@ -212,6 +211,8 @@ def on_focus_out(event):
         widget.insert(0, 'enter number 1' if widget == entry1 else 'enter number 2')
         widget.config(fg='gray')
 
+        
+# Create input fields
 entry1 = tk.Entry(root, fg='gray')
 entry1.insert(0, 'enter number 1')
 entry1.bind("<FocusIn>", on_entry_click)
@@ -259,6 +260,8 @@ button10.grid(row=5, column=2, padx=20, pady=10)
 button11 = tk.Button(root, text="random number", command=option11, bg="#F2F2F2", width=15)
 button11.grid(row=6, column=0, padx=20, pady=10, sticky="ew", columnspan=4)
 
+
+# Create the text where the results are output
 text = tk.Text(root, height=10, wrap='word',state='disabled', bg='#dedede')
 text.grid(row=9, column=0, sticky="nsew", columnspan=4)
 
@@ -271,5 +274,6 @@ text.tag_configure("center", justify="center")
 
 text.bind_all("<MouseWheel>", lambda event: text.yview_scroll(-1 * int(event.delta/120), "units"))
 
+# GUI main loop function
 root.mainloop()
 
