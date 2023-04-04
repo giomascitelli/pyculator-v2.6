@@ -1,10 +1,13 @@
 # pyculator v2.6
 
-Uma calculadora com as funções principais (adição, subtração, multiplicação, divisão) e algumas adicionais como potenciação, raiz quadrada, porcentagem, resto, fibonacci, calculo fatorial e gerar um número aleatório.
+A calculator with main functions (addition, subtraction, multiplication and division) and some additional ones such as: exponentiation, square root, percentage, modulo, fibonacci sequence, factorial function and a random number generator.
 
-Além disso, quando o programa exibe o resultado de alguma operação, também exibe algumas informações sobre o número, como par ou impar, número primo ou composto, quais são seus divisores e exibe um gráfico pela biblioteca matplotlib que demonstra os números inseridos pelo usuário e resultado como um gráfico de barras. 
+The program also outputs (apart from the result of the operation) some informations about the result number, such as: the number is even or odd, prime or composite, his divisors and displays a graph with matplotlib that shows the numbers input by the user and the result as a bar chart.
 
-Finalmente, a calculadora exibe uma interface visual gráfica feita com a biblioteca tkinter.
+Finally, the pyculator displays a graphical user interface made with the tkinter library.
 
+<br>
 
-![](https://i.imgur.com/1G4Vz4R.png)
+*<p align="center">
+<img src="https://i.imgur.com/1G4Vz4R.png" width="500" height="535"/>
+<br>Pyculator's GUI</p>*
