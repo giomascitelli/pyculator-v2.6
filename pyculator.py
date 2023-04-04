@@ -184,7 +184,7 @@ frame.grid(row=8, column=0, padx=20, pady=10, sticky="ew")
 
 # Load image
 image = Image.open("logo.png")
-image = image.resize((295, 80), Image.ANTIALIAS)  # Resize the image as per your requirement
+image = image.resize((295, 80), Image.Resampling.LANCZOS)  # Resize the image as per your requirement
 photo = ImageTk.PhotoImage(image)
 
 # Create a label for the image
