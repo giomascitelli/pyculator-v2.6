@@ -184,7 +184,7 @@ frame.grid(row=8, column=0, padx=20, pady=10, sticky="ew")
 
 # Load image
 image = Image.open("logo.png")
-image = image.resize((295, 80), Image.Resampling.LANCZOS)  # Resize the image as per your requirement
+image = image.resize((295, 80), Image.Resampling.LANCZOS) # Image resizing
 photo = ImageTk.PhotoImage(image)
 
 # Create a label for the image
@@ -261,18 +261,19 @@ button11 = tk.Button(root, text="random number", command=option11, bg="#F2F2F2",
 button11.grid(row=6, column=0, padx=20, pady=10, sticky="ew", columnspan=4)
 
 
-# Create the text where the results are output
+# Create the text where the results and the info are output
 text = tk.Text(root, height=10, wrap='word',state='disabled', bg='#dedede')
 text.grid(row=9, column=0, sticky="nsew", columnspan=4)
 
+# Create the scrollbar
 vsb = ttk.Scrollbar(root, orient="vertical", command=text.yview)
 vsb.grid(row=9, column=4, sticky="ns")
 
 text.configure(width=50, yscrollcommand=vsb.set)
 
-text.tag_configure("center", justify="center")
+text.tag_configure("center", justify="center") # Center the text
 
-text.bind_all("<MouseWheel>", lambda event: text.yview_scroll(-1 * int(event.delta/120), "units"))
+text.bind_all("<MouseWheel>", lambda event: text.yview_scroll(-1 * int(event.delta/120), "units")) # Allow the user to use the mousewheel to scroll
 
 # GUI main loop function
 root.mainloop()
