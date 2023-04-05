@@ -9,5 +9,5 @@ Finally, the pyculator displays a graphical user interface made with the tkinter
 <br>
 
 *<p align="center">
-<img src="https://i.imgur.com/1G4Vz4R.png" width="500" height="535"/>
+<img src="https://i.imgur.com/ggEKl6w.png" width="500" height="535"/>
 <br>Pyculator's GUI</p>*
